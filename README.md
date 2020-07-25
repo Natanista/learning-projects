@@ -1,2 +1,3 @@
 # Learning-projects
-APLICANDO OS MEUS APRENDIZADOS INICIAIS. DESENVOLVENDO IDEIAS MALUCOS E LEGAIS, ESSE REPOSITÓRIO É 100% PARA ISSO.
+
+projects created during my learning, putting into practice the concepts learned online
