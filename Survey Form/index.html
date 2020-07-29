@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 id="tittle">The Smiths Survey</h1>
+    <p id="description">what is your favorite The smiths song?</p>
+
+        
+    <form id="survey-form">
+        <div class="name">
+            <label for="fname" id="name-label">Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your First Name"><br><br>
+            <label for="lname" id="last-name-label">Last Name:</label>
+            <input type="lname" id="name" name="lname" placeholder="Enter your Last Name">
+        </div>    
+       <br>
+       
+       <div id="email">
+           <label for="email">Email:</label>
+            <input type="email"  id="email-label" name="email" placeholder="Enter your Email">
+       </div>
+<br>
+       <div id="age-label">
+           <label for="age" id="age">Age (optional)</label> 
+        <input type="number" id="age-label" name="age" min="10" max="100" placeholder="Enter your Age">
+       </div>
+<br>
+       <div id="dropdown">
+           <p>Which option best describes your current role?</p>
+               <select name="role" id="select-label">
+                   <option value="student">Student</option>
+                   <option value="full-time-job">Full time job</option>
+                   <option value="full-time-learner">Full time learner</option>
+                   <option value="prefer-not-to-say">Prefer not to say</option>
+                   <option value="other">Other</option>
+               </select>
+       </div>
+<br>
+       <div id="radio-buttons">
+           <label>Would you recommend The Smiths to a friend?:</label><br>
+        <input type="radio"  name="recommend" value="Definitely">
+        <label for="male">Definitely</label><br>
+        <input type="radio" name="recommend" value="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" name="recommend" value="not-sure">
+        <label for="not-sure">Not Sure</label>
+      
+       </div>
+<br>
+       <div id="checkboxes">
+           <label>what is your favorites The Smiths songs?:</label><br>
+           <input type="checkbox" name="music1" value="music1">
+           <label for="music1">Panic</label><br>
+           <input type="checkbox"  name="music2" value="music2">
+           <label for="music2">There Is A Light That Never Goes Out</label><br>
+           <input type="checkbox"  name="music33" value="music3">
+           <label for="music33"> How Soon Is Now</label><br> 
+           <input type="checkbox"name="music4" value="music4">
+           <label for="music4"> This Charming Man</label><br> 
+           <input type="checkbox" name="music53" value="music5">
+           <label for="music5"> Bigmouth Strikes Again</label><br> 
+           <input type="checkbox" name="music6" value="music6">
+           <label for="vehicle3"> Heaven Now I'm Miserable Now</label><br>      
+       </div>
+<br>
+       <div id="text-area">
+           <label for="textarea">Write your opinion about the band:</label><br>
+           <textarea id="text-area" name="text-area" rows="5" cols="50"></textarea>
+       </div>
+
+       <div id="submit-button">
+        <input type="submit" value="submit" > 
+       </div>
+        
+    </form>
+</body>
+</html>
