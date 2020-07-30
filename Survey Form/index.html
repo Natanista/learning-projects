@@ -1,83 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1 id="tittle">The Smiths Survey</h1>
-    <p id="description">what is your favorite The smiths song?</p>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform </i></p>
 
-        
     <form id="survey-form">
-        <div class="name">
-            <label for="fname" id="name-label">Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Enter your First Name"><br><br>
-            <label for="lname" id="last-name-label">Last Name:</label>
-            <input type="lname" id="name" name="lname" placeholder="Enter your Last Name">
-        </div>    
-       <br>
-       
-       <div id="email">
-           <label for="email">Email:</label>
-            <input type="email"  id="email-label" name="email" placeholder="Enter your Email">
-       </div>
-<br>
-       <div id="age-label">
-           <label for="age" id="age">Age (optional)</label> 
-        <input type="number" id="age-label" name="age" min="10" max="100" placeholder="Enter your Age">
-       </div>
-<br>
-       <div id="dropdown">
-           <p>Which option best describes your current role?</p>
-               <select name="role" id="select-label">
-                   <option value="student">Student</option>
-                   <option value="full-time-job">Full time job</option>
-                   <option value="full-time-learner">Full time learner</option>
-                   <option value="prefer-not-to-say">Prefer not to say</option>
-                   <option value="other">Other</option>
-               </select>
-       </div>
-<br>
-       <div id="radio-buttons">
-           <label>Would you recommend The Smiths to a friend?:</label><br>
-        <input type="radio"  name="recommend" value="Definitely">
-        <label for="male">Definitely</label><br>
-        <input type="radio" name="recommend" value="maybe">
-        <label for="maybe">Maybe</label><br>
-        <input type="radio" name="recommend" value="not-sure">
-        <label for="not-sure">Not Sure</label>
-      
-       </div>
-<br>
-       <div id="checkboxes">
-           <label>what is your favorites The Smiths songs?:</label><br>
-           <input type="checkbox" name="music1" value="music1">
-           <label for="music1">Panic</label><br>
-           <input type="checkbox"  name="music2" value="music2">
-           <label for="music2">There Is A Light That Never Goes Out</label><br>
-           <input type="checkbox"  name="music33" value="music3">
-           <label for="music33"> How Soon Is Now</label><br> 
-           <input type="checkbox"name="music4" value="music4">
-           <label for="music4"> This Charming Man</label><br> 
-           <input type="checkbox" name="music53" value="music5">
-           <label for="music5"> Bigmouth Strikes Again</label><br> 
-           <input type="checkbox" name="music6" value="music6">
-           <label for="vehicle3"> Heaven Now I'm Miserable Now</label><br>      
-       </div>
-<br>
-       <div id="text-area">
-           <label for="textarea">Write your opinion about the band:</label><br>
-           <textarea id="text-area" name="text-area" rows="5" cols="50"></textarea>
-       </div>
+        <div class="form-control">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"
+        required>
+        </div>
 
-       <div id="submit-button">
-        <input type="submit" value="submit" > 
-       </div>
-        
+        <div class="form-control">
+            <label for="email" id="email-label>E-mail:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-control">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" placeholder="Enter your age" required min="18" max="100">
+                </div>
+
+                <div class="form-control">
+                    <label for="role" >Which option best describes your current role?:</label>
+                    <select name="role" id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="other">Other</option>
+
+                    </select>
+                    
+            </div>
+            <div class="form-control">
+                <label>Would you recommend freeCodeCamp to a friend?:</label>
+                
+                <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend" value="definitely">Definitely</label>
+                
+                <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend" value="maybe">Maybe</label>
+                
+                <label for="recommend-3"><input type="radio" id="recommend-3" name="recommend" value="not-sure">Not sure</label>
+               
+            </div>
+
+            <div class="form-control">
+                <label for="role" >What is your favorite feature of freeCodeCamp?:</label>
+                <select name="feature" id="feature">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="challanges">Challanges</option>
+                    <option value="projects">Projects</option>
+                    <option value="comunnity">Community</option>
+                    <option value="open-source">Open Source</option>
+
+                </select>
+                
+        </div>
+
+            <div class="form-control">
+                <label>What would you like to see improved?
+                     <small>(Check all that apply)<small></label>
+                        
+                    
+                    <label for="improve-1"><input type="checkbox" name="improve" id="improve-1" value="improve-1">Front-end Projects</label><br>                 
+                    <label for="improve-2"><input type="checkbox" name="improve" id="improve-2" value="improve-2" />Back-end Projects</label><br>
+                    <label for="improve-3"><input type="checkbox" name="improve" id="improve-3" value="improve-3"> Data Visualization</label><br>
+                    <label for="improve-4"><input type="checkbox" name="improve" id="improve-4" value="improve-4" />Challenges</label><br>
+                    <label for="improve-5"><input type="checkbox" name="improve" id="improve-5" value="improve-5">Open Source Community</label><br>
+                    <label for="improve-6"><input type="checkbox" name="improve" id="improve-6" value="improve-6">Gitter help rooms</label><br>
+                    <label for="improve-7"><input type="checkbox" name="improve" id="improve-7" value="improve-7">Videos</label><br>
+                    <label for="improve-8"><input type="checkbox" name="improve" id="improve-8" value="improve-8">City Meetups</label><br>
+                    <label for="improve-9"><input type="checkbox" name="improve" id="improve-9" value="improve-9">Wiki</label><br>
+                    <label for="improve-10"><input type="checkbox" name="improve" id="improve-10" value="mprove-10">Forum</label><br>
+                    <label for="improve-11"><input type="checkbox" name="improve" id="improve-11" value="improve-11">Additional Courses</label>
+                </div>
+
+                <div class="form-control">
+                    <label for="comments">Any comments or suggestions?</label>
+                    <textarea name="comments" id="comments" placeholder="Enter your comment here"></textarea>
+
+                </div>
+                <button type="submit" id="submit">Submit</button>
+                    
     </form>
+        
+
+    
 </body>
 </html>

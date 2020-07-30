@@ -1,27 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-body{
-    text-align:center;
-    background-color: #f1ede1;
+* {
+    box-sizing: border-box;
 }
-
-#survey-form {
-    width: 500px;
-    background-color:#f3a683;
+body{
+    background-color:#c7ecee;
+    font-family: sans-serif;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    
+    margin: 0;
+
 }
 
 h1{
-    font-family: 'Passion One', cursive;
-    font-size: 40px;
+    margin-bottom: 0;;
 }
 
-#description{
-    font-family: monospace;
-    font-size: 20px;
-    
+h1 + p {
+    margin-top: 0;;
+}
+
+form{
+    background-color:#fff;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius:5px ;
+    padding:30px 20px;
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-control input,
+ .form-control select,
+ .form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.form-control input[type="radio"], .form-control input[type="checkbox"] {
+    display: inline-block;
+     width:auto ;      
+}
+
+button {
+    background-color:#c7ecee;
+    border: 1px solid #c7ecee;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 16px;
+    display: block;
+    padding:10px;
+    width: 100%;
+
 }
 
