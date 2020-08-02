@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    font-family: 'IBM Plex Sans', sans-serif;
+   
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1.5redm 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav#nav-bar ul {
+    display: flex;
+}
+
+nav#nav-bar ul li {
+    margin-left: 2rem;
+}
+
+nav#nav-bar ul li a {
+    color: #111;
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+nav #nav-bar ul {
+    display: block;
+    text-align: center;
+}
+
+.container-subscribe {
+      text-align: center;
+      margin: 2rem auto;
+}
+
+.subscribe-input {
+    padding: 3rem;
+    display: block;
+    margin: 0.9rem auto;
+}
+
+#email {
+    width: 250px;
+}
+
+#input {
+    width: 150px;
+    border:none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background:#dfe4ea ;
+}
+
+.feature-wrapper {
+    display: flex;
+    align-items:center;
+    margin-top: 2rem;
+}
+
+.feature.text {
+    margin-left: 3.5rem;
+
+}
+
+.feature.text h3 {
+    font-size: 1.5rem;
+}
+
+.feature.text p {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 650px) {
+    .feature-wrapper {
+        flex-direction: column;
+    }
+    .feature-text {
+        margin:0;
+        text-align: center;
+    }
+}
+
+section#video {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.pricing-wrapper {
+    display: grid;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: repeat(3, 300px);
+    margin-bottom: 5rem;
+}
+
+.pricing-box {
+    text-align: center;
+    line-height: 2.5;
+    border: 1px solid #111;
+}
+
+.pricing-box h4 {
+    background: #ddd ;
+}
+
+.pricing-box .price {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.pricing-box .btn {
+    background: #dfe4ea;
+    display: block;
+    width: 150px;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    color: #111;
+    font-weight: bold;
+    
+}
+
+.footer {
+    background:  #ddd;
+    text-align: end;
+    padding: 1rem .5rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer-nav ul li {
+    margin-left: 1.5rem;
+}
+
+.footer-nav ul li a {
+    color: #lll;
+}
+
+.footer-copyright {
+    opacity: 0.6;
+    color: #333;
+}
