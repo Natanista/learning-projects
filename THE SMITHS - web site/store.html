@@ -1,139 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Smiths | STORE</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
 </head>
- <body>
-     <header>
-         <nav>
-             <ul>
-                 <li><a href="index.html">HOME</a></li>
-                 <li><a href="store.html">STORE</a></li>
-                 <li><a href="about.html">ABOUT</a></li>
-             </ul>
-         </nav> 
-         <hr>
-         <h1>The Smiths</h1>
-     </header>
-     <section>
-        <h2>MUSIC</h2>
-        <div>
-            <div>
-                <b>The Smiths</b>
-            </div>
-            <img src="/albums/album_1.jpg" width="150px">
-            <div>
-             <span>$15.99</span>
-             <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        
-        <div>
-            <div>
-                <b>The Queen is Dead</b>
-            </div>
-            <img src="/albums/album_2.jpg" width="150px">
-            <div>
-             <span>$20.99</span>
-             <button role="button">ADD TO CART</button>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="band-name band-name-large">The Smiths</h1>
+    </header>
+    <section class="container content-section">
+        <h2 class="section-header">MUSIC</h2>
+    <div class="shop-items">
+        <div class="shop-item"> 
+            
+
+            <span class="shop-item-title">The Smiths</span>
+
+            <img class="shop-item-image" src="/albums/album_1.jpg" >
+            <div class="shop-item-deatails">
+                <span class="shop-item-price">$15.99</span>
+                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
             </div>
         </div>
+
         <div>
-            <div>
-                <b>Meat is Murder</b>
-            </div>
-            <img src="/albums/album_3.jpg" width="150px">
-            <div>
-             <span>$17.99</span>
-             <button role="button">ADD TO CART</button>
+
+            <span class="shop-item-title">The Queen is Dead</span>
+
+            <img class="shop-item-image" src="/albums/album_2.jpg" >
+            <div class="shop-item-deatails">
+                <span class="shop-item-price">$20.99</span>
+                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
             </div>
         </div>
         <div>
-            <div>
-                <b>Stangeways, Here We Come</b>
-            </div>
-            <img src="/albums/album_4.jpg" width="150px">
-            <div>
-             <span>$9.99</span>
-             <button role="button">ADD TO CART</button>
+
+            <span class="shop-item-title">Meat is Murder</span>
+
+            <img class="shop-item-image" src="/albums/album_3.jpg" ">
+            <div class="shop-item-deatails">
+                <span class="shop-item-price">$17.99</span>
+                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
             </div>
         </div>
-     </section>
-     
-     <section>
+        <div>
+
+            <span class="shop-item-title">Stangeways, Here We Come</span>
+
+            <img class="shop-item-image" src="/albums/album_4.jpg" ">
+            <div class="shop-item-deatails">
+                <span class="shop-item-price">$9.99</span>
+                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
         <h2>MERCH</h2>
         <div>
-            <div>
-                <b>T-SHIRT</b>
-            </div>
-            <img src="/merch/t_shirt.jpg" width="150px">
-            <div>
-             <span>$19.99</span>
-             <button role="button">ADD TO CART</button>
+            
+                <span class="shop-item-title">T-SHIRT</span>
+           
+            <img  class="shop-item-image"  src="/merch/t_shirt.jpg" width="150px">
+            <div  class="shop-item-deatails">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
             </div>
         </div>
+
         <div>
-            <div>
-                <b>CUP</b>
-            </div>
-            <img src="/merch/cup.jpg" width="150px">
-            <div>
-             <span>$7.99</span>
-             <button role="button">ADD TO CART</button>
+            
+                <span class="shop-item-title">CUP</span>
+            
+            <img  class="shop-item-image"  src="/merch/cup.jpg" width="150px">
+            <div  class="shop-item-deatails">
+                <span class="shop-item-price">$7.99</span>
+                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
             </div>
         </div>
+    </div>
     </section>
-    
-    <section>
-        <h2>CART</h2>
-        <div>
-            <b>ITEM</b>
-            &lt;&gt;
-            <b>PRICE</b>
-            &lt;&gt;
-            <b>QUANTITY</b>
+
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
         <div>
             <img src="/merch/t_shirt.jpg" width="100px">
             <span>T-SHIRT</span>
-            &lt;&gt;
+            
             <span>$19.99</span>
-            &lt;&gt;
+            
             <input type="number" value="">
-            &lt;&gt;
+            
             <button role="button">REMOVE</button>
         </div>
         <div>
             <img src="/albums/album_3.jpg" width="100px">
             <span>Meat is Murder</span>
-            &lt;&gt;
+            
             <span>$17.99</span>
-            &lt;&gt;
+            
             <input type="number" value="">
-            &lt;&gt;
+            
             <button role="button">REMOVE</button>
         </div>
-        <hr>
+
         <div>
-            <b>TOTAL</b>
+            <span>TOTAL</span>
             <span>$37.98</span>
         </div>
         <div>
-            <button role="button" >PURCHASE</button>
+            <button role="button">PURCHASE</button>
         </div>
     </section>
-    
-    <footer>
-         <h3>The Smiths</h3>
-         <ul>
-            <li><a href="https://www.facebook.com/TheSmithsOfficial/" target="_blank"><img src="icons/face_logo.png" width="20px"></a></li>
-            <br>
-            <li><a href="https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8?si=sPFWJLQmRdqlmwrn8dQA9w" target="_blank"><img src="icons/spotify_logo.png" width="20px" target="_blank"></a></li>
-            <br>
-            <li><a href="https://www.youtube.com/channel/UC-sdfo_ho6Nq3OH8RUHBrNg" target="_blank"><img src="icons/youtube_logo.png" width="20px"></a></li>
-        </ul>
-     </footer>
-  </body>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">The Smiths</h3>
+            <ul class="nav footer-nav">
+                <li><a href="https://www.facebook.com/TheSmithsOfficial/" target="_blank"><img
+                            src="icons/face_logo.png"></a></li>
+                <br>
+                <li><a href="https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8?si=sPFWJLQmRdqlmwrn8dQA9w"
+                        target="_blank"><img src="icons/spotify_logo.png"></a></li>
+                <br>
+                <li><a href="https://www.youtube.com/channel/UC-sdfo_ho6Nq3OH8RUHBrNg" target="_blank"><img
+                            src="icons/youtube_logo.png"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
 </html>
