@@ -22,35 +22,35 @@
     </header>
     <section class="container content-section">
         <h2 class="section-header">MUSIC</h2>
-    <div class="shop-items">
-        <div class="shop-item"> 
-            
+        <div class="shop-items">
+            <div class="shop-item">
 
-            <span class="shop-item-title">The Smiths</span>
 
-            <img class="shop-item-image" src="/albums/album_1.jpg" >
-            <div class="shop-item-deatails">
-                <span class="shop-item-price">$15.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                <span class="shop-item-title">The Smiths</span>
+
+                <img class="shop-item-image" src="/albums/album_1.jpg">
+                <div class="shop-item-deatails">
+                    <span class="shop-item-price">$15.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-        </div>
 
-        <div>
+            <div>
 
-            <span class="shop-item-title">The Queen is Dead</span>
+                <span class="shop-item-title">The Queen is Dead</span>
 
-            <img class="shop-item-image" src="/albums/album_2.jpg" >
-            <div class="shop-item-deatails">
-                <span class="shop-item-price">$20.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                <img class="shop-item-image" src="/albums/album_2.jpg">
+                <div class="shop-item-deatails">
+                    <span class="shop-item-price">$20.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-        </div>
-        <div>
+            <div>
 
-            <span class="shop-item-title">Meat is Murder</span>
+                <span class="shop-item-title">Meat is Murder</span>
 
-            <img class="shop-item-image" src="/albums/album_3.jpg" ">
-            <div class="shop-item-deatails">
+                <img class="shop-item-image" src="/albums/album_3.jpg" ">
+            <div class=" shop-item-deatails">
                 <span class="shop-item-price">$17.99</span>
                 <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
             </div>
@@ -60,77 +60,81 @@
             <span class="shop-item-title">Stangeways, Here We Come</span>
 
             <img class="shop-item-image" src="/albums/album_4.jpg" ">
-            <div class="shop-item-deatails">
-                <span class="shop-item-price">$9.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
-            </div>
+            <div class=" shop-item-deatails">
+            <span class="shop-item-price">$9.99</span>
+            <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
         </div>
-    </div>
+        </div>
+        </div>
     </section>
 
-    <section>
-        <h2>MERCH</h2>
-        <div>
-            
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <div class="shop-item">
                 <span class="shop-item-title">T-SHIRT</span>
-           
-            <img  class="shop-item-image"  src="/merch/t_shirt.jpg" width="150px">
-            <div  class="shop-item-deatails">
-                <span class="shop-item-price">$19.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                <img class="shop-item-image" src="/merch/t_shirt.jpg">
+                <div class="shop-item-deatails">
+                    <span class="shop-item-price">$19.99</span>
+                    <button type="button" class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
-        </div>
 
-        <div>
-            
-                <span class="shop-item-title">CUP</span>
-            
-            <img  class="shop-item-image"  src="/merch/cup.jpg" width="150px">
-            <div  class="shop-item-deatails">
-                <span class="shop-item-price">$7.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Coffee Cup</span>
+                <img class="shop-item-image" src="/merch/cup.jpg">
+                <div class="shop-item-deatails">
+                    <span class="shop-item-price">$7.99</span>
+                    <button type="button" class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
             </div>
         </div>
-    </div>
+        </div>
     </section>
 
     <section class="container content-section">
         <h2 class="section-header">CART</h2>
         <div class="cart-row">
             <span class="cart-item cart-header cart-column">ITEM</span>
-            
+
             <span class="cart-price cart-header cart-column">PRICE</span>
-            
+
             <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <div>
-            <img src="/merch/t_shirt.jpg" width="100px">
-            <span>T-SHIRT</span>
-            
-            <span>$19.99</span>
-            
-            <input type="number" value="">
-            
-            <button role="button">REMOVE</button>
-        </div>
-        <div>
-            <img src="/albums/album_3.jpg" width="100px">
-            <span>Meat is Murder</span>
-            
-            <span>$17.99</span>
-            
-            <input type="number" value="">
-            
-            <button role="button">REMOVE</button>
-        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="/merch/t_shirt.jpg" width="100px">
+                    <span class="cart-item-title">T-SHIRT</span>
+                </div>
 
-        <div>
-            <span>TOTAL</span>
-            <span>$37.98</span>
+                <span class="cart-price cart-column">$19.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger " role="button" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="/albums/album_3.jpg" width="100px">
+                    <span class="cart-item-title">Meat is Murder</span>
+                </div>
+                <span class="cart-price cart-column">$17.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger " role="button" type="button">REMOVE</button>
+                </div>
+            </div>
         </div>
         <div>
-            <button role="button">PURCHASE</button>
+            <div class="cart-total">
+            <span class="cart-total-title">TOTAL</span>
+            <span class="cart-total-price">$37.98</span>
         </div>
+        
+            <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
+        
     </section>
 
     <footer class="main-footer">
