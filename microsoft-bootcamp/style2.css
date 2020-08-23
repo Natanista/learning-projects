@@ -28,9 +28,8 @@ div+.myClass {
     background-color: yellow;
 }
 
+/* Bonus */
 ul+div {
     border: 1px solid pink;
     ;
 }
-
-/* Bonus */
