@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css training</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <h3>searching now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">yummy.eats</a>
+            </header>
+
+            <h1><span>The Healty</span> Eating Experience</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis ab distinctio quasi dolores.
+                Quam quibusdam ducimus, iste atque ipsam tenetur ullam. Fugit itaque aperiam dicta quos rem veritatis
+                quas!</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "San Diego"</p>
+                    </div>
+
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia atque officiis aliquid ducimus blanditiis quam laborum earum, corporis et dicta reiciendis perferendis harum nihil architecto molestias quis, maiores voluptas incidunt vel aperiam. Tenetur adipisci repellat, consequuntur in ad assumenda?</p>           
+        </div>
+        <img src="/image/food.webp" alt="picture of a food in a bowl">
+    </section>
+
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        });
+        
+        setTimeout(function () {
+                overlay.style.display = "none";
+                overlay.classList.remove("animate-overlay");
+            }, 3000);
+
+
+    </script>
+</body>
+
+</html>
+
+<!--https://images.unsplash.com/photo-1552010099-5dc86fcfaa38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80 -->
