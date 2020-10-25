@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        h3{
+            font-size: 30px;
+        }
+        #resultado{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Sistema de multas</h3>
+    <p>Velocidade do carro:</p>
+    <input type="number" name="velocidade" id="velocidade"><span>Km/h</span>
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            var velocidadeCarro = document.getElementById('velocidade');
+            var result = document.getElementById('resultado');
+
+            var velocidadeReal = Number(velocidade.value);
+
+            result.innerHTML = `<p>Sua velocidade atyak pe de <b>${velocidadeReal}Km/h</b></p>`;
+            if(velocidadeReal > 60){
+                result.innerHTML += `<p>VOCE ESTÁ MULTADO</p>`;
+            }
+
+           
+            
+
+        }
+    </script>
+</body>
+
+</html>
