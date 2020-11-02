@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font: normal 15pt Arial;
+        }
+
+        .header {
+            color: hsl(0, 0%, 100%);
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.561);
+        }
+
+        .div {
+            text-align: center;
+            padding: 8px;
+        }
+
+
+        .footer {
+            color: white;
+            text-align: center;
+            font-style: italic;
+            font-size: 30px;
+        }
+
+        .section button {}
+
+        #btn {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Contador</h1>
+    </div>
+
+    <div class="section">
+        <div id="dados">
+            <p>Inicio: <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="contar" onclick="contar()"></p>
+        </div>
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Natan &hearts;</p>
+    </div>
+
+    <script src="ex003.js">
+    </script>
+</body>
+
+</html>
