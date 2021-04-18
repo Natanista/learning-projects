@@ -1,8 +1,8 @@
 function log(message) {
     console.log(message);
 }
-var message = 'Hello World';
-log(message);
+var message1 = 'Hello World';
+log(message1);
 var number = 1;
 var count = 2;
 function doSomething() {
@@ -29,3 +29,28 @@ var Color;
 })(Color || (Color = {}));
 ;
 var backgroundColor = Color.Red;
+var messagem;
+messagem = 'abc';
+var endsWithC = messagem.endsWith('c');
+var alternativeWay = messagem.endsWith('c');
+//arrow function
+var logger = function (mensagem) {
+    console.log(mensagem);
+};
+var doLog = function (mensagem) { return console.log(mensagem); };
+//Interface
+var Point = /** @class */ (function () {
+    function Point() {
+    }
+    Point.prototype.draw = function () {
+        console.log('Y: ' + this.x + ', Y: ' + this.y);
+    };
+    Point.prototype.getDistance = function (another) {
+        //...
+    };
+    return Point;
+}());
+var point = new Point();
+point.x = 1;
+point.y = 20;
+point.draw();
