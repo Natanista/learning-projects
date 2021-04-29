@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="document">Documento:</label>
+    
+        <select id="selecao">
+            <option value="CPF">CPF</option>
+            <option value="CNPJ">CNPJ</option>
+        </select>
+    
+       <input type="text" placeholder="000000000/000-1">
+
+       <label for="from-date">Start date:</label>
+       <input type="date">
+
+       <label for="to-date">to:</label>
+       <input type="date" name="" id="" min=""  max="2021/04/30">
+       <input type="button" value="Pesquisar">
+        </div>
+    <div class="bloco">
+ 
+    <!--table defines a table-->
+    <table>
+        <!-- tr - table rows-->
+        <tr>
+            <!--th - table headers/title of colums-->
+            <th><input type="checkbox" name="" id=""></th>
+          <th>Transação</th>
+          <th>tipo transação</th>
+          <th>agência</th>
+          <th>conta</th>
+          <th>transactionID</th>
+          <th>data/hora</th>
+          <th>válido até</th>
+          <th>valor</th>
+
+        </tr>
+
+
+        <tr>
+            <!--td - table data-->
+            <td><input type="checkbox" name="name1" />&nbsp;</td>
+          <td>PIX</td>
+          <td>PIX_ORDEM_IBJ</td>
+          <td>28544</td>
+          <td>928383</td>
+          <td>21313-221312-31</td>
+          <td>23/93/32  21:23:23</td>
+          <td>23/23/12</td>
+          <td>R$2231,993</td>
+        </tr>
+
+
+        <tr>
+            <!--td - table data-->
+            <td><input type="checkbox" name="name1" />&nbsp;</td>
+          <td>PIX</td>
+          <td>PIX_ORDEM_IBJ</td>
+          <td>28544</td>
+          <td>928383</td>
+          <td>21313-221312-31</td>
+          <td>23/93/32  21:23:23</td>
+          <td>23/23/12</td>
+          <td>R$2231,993</td>
+        </tr>
+
+
+        <tr>
+            <!--td - table data-->
+            <td><input type="checkbox" name="name1" />&nbsp;</td>
+          <td>PIX</td>
+          <td>PIX_ORDEM_IBJ</td>
+          <td>28544</td>
+          <td>928383</td>
+          <td>21313-221312-31</td>
+          <td>23/93/32  21:23:23</td>
+          <td>23/23/12</td>
+          <td>R$2231,993</td>
+        </tr>    
+        
+        
+        <tr>
+            <!--td - table data-->
+            <td><input type="checkbox" name="name1" />&nbsp;</td>
+          <td>PIX</td>
+          <td>PIX_ORDEM_IBJ</td>
+          <td>28544</td>
+          <td>928383</td>
+          <td>21313-221312-31</td>
+          <td>23/93/32  21:23:23</td>
+          <td>23/23/12</td>
+          <td>R$2231,993</td>
+        </tr>
+
+                <tr>
+            <!--td - table data-->
+            <td><input type="checkbox" name="name1" />&nbsp;</td>
+          <td>PIX</td>
+          <td>PIX_ORDEM_IBJ</td>
+          <td>28544</td>
+          <td>928383</td>
+          <td>21313-221312-31</td>
+          <td>23/93/32  21:23:23</td>
+          <td>23/23/12</td>
+          <td>R$2231,993</td>
+        </tr>  
+
+      </table>
+    </div>
+    <input type="button" value="APROVAR" onclick="popar()">
+    <input type="button" value="NEGAR" onclick="popar2()">
+</body>
+</html>
+
+<script>
+ selecao.value = "CPF";
+ var today = new Date();
+ var hoje = today.getDate;
+
+
+ function popar(){
+     confirm("tem certeza que quer aprovar?");
+ }
+
+ function popar2(){
+     confirm("tem certeza que quer negar?");
+ }
+</script>
